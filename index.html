@@ -1,245 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harish | UI/UX Designer</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harish B - Aspiring Frontend Developer & Software Engineer specializing in responsive web design and interactive experiences.">
+  <title>Harish B | Frontend Developer & Software Engineer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Animated background elements -->
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+  <div class="noise-bg"></div>
 
-<!-- Navigation -->
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="#home">
+        <span class="brand-icon">⚡</span>HARISH<span class="brand-dot">.</span>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<nav>
-    <div class="logo">Harish</div>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+      <a href="#contact" class="cta-button">
+        <span>Let's Connect</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </header>
 
-<!-- Hero Section -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for opportunities
+          </div>
 
-<section class="hero">
+          <h1 class="hero-title">
+            Building Beautiful<br>
+            <span class="gradient-text">Web Experiences</span>
+          </h1>
 
-    <div class="hero-content">
+          <p class="hero-subtitle">
+            I'm Harish, a passionate Frontend Developer & Software Engineer crafting responsive, interactive, and user-centric digital experiences with clean code and thoughtful design.
+          </p>
 
-        <h1>
-            Hi, I'm <span>Harish</span> 👋
-        </h1>
-
-        <h2>
-            UI/UX Designer • Full Stack Learner • Digital Marketing Enthusiast
-        </h2>
-
-        <p>
-            I design intuitive digital experiences, modern interfaces,
-            and user-centered products that solve real-world problems.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">
-                View Projects
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i class="bi bi-arrow-right"></i>
             </a>
-
-            <a href="resume.html" class="btn-outline">
-                View Resume
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch <i class="bi bi-envelope"></i>
             </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/HARISH-hx" target="_blank" rel="noreferrer" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/harish-babu-dev/" target="_blank" rel="noreferrer" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:harish.babu.0115@gmail.com" title="Email">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
         </div>
 
-    </div>
+        <div class="hero-visual">
+          <div class="floating-card code-card">
+            <div class="card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span>portfolio.js</span>
+            </div>
+            <div class="card-body">
+              <p><span class="keyword">const</span> developer = {</p>
+              <p class="indent"><span class="property">name:</span> <span class="string">'Harish B'</span>,</p>
+              <p class="indent"><span class="property">role:</span> <span class="string">'Frontend Developer'</span>,</p>
+              <p class="indent"><span class="property">passion:</span> <span class="string">'Interactive UI'</span>,</p>
+              <p class="indent"><span class="property">ready:</span> <span class="bool">true</span></p>
+              <p>};</p>
+            </div>
+          </div>
 
-</section>
+          <div class="floating-card stats-card">
+            <div class="stat-item">
+              <span class="stat-number">8.63</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!-- Statistics -->
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
 
-<section class="stats">
-
-    <div class="stat-card">
-        <h3>10+</h3>
-        <p>Projects</p>
-    </div>
-
-    <div class="stat-card">
-        <h3>3+</h3>
-        <p>Case Studies</p>
-    </div>
-
-    <div class="stat-card">
-        <h3>100+</h3>
-        <p>Design Screens</p>
-    </div>
-
-    <div class="stat-card">
-        <h3>1+</h3>
-        <p>Year Learning</p>
-    </div>
-
-</section>
-
-<!-- About -->
-
-<section id="about">
-
-    <h2>About Me</h2>
-
-    <div class="card">
-
-        <p>
-            I am a passionate UI/UX Designer and 3rd-year college student.
-            My focus is on creating modern user experiences through
-            research, wireframing, prototyping, and visual design.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- Skills -->
-
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">🎨 UI Design</div>
-
-        <div class="skill-card">🧠 UX Research</div>
-
-        <div class="skill-card">📱 Wireframing</div>
-
-        <div class="skill-card">⚡ Prototyping</div>
-
-        <div class="skill-card">🛠 Figma</div>
-
-        <div class="skill-card">💻 HTML & CSS</div>
-
-        <div class="skill-card">🌐 Full Stack Learning</div>
-
-        <div class="skill-card">📈 Digital Marketing</div>
-
-    </div>
-
-</section>
-
-<!-- Services -->
-
-<section id="services">
-
-    <h2>Services</h2>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <h3>UI Design</h3>
-            <p>Modern and visually appealing interfaces.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>About <span class="gradient-text">Me</span></h2>
         </div>
 
-        <div class="service-card">
-            <h3>UX Design</h3>
-            <p>Research-driven user experiences.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Web Design</h3>
-            <p>Responsive and user-friendly websites.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Projects -->
-
-<section id="projects">
-
-    <h2>Featured Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>Food Delivery App</h3>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>I craft digital experiences with attention to detail</h3>
             <p>
-                Mobile application designed for quick food ordering.
+              I'm a Computer Science Engineering student specializing in Cyber Security at Prathyusha Engineering College. My passion lies in building modern, responsive web interfaces that not only look great but feel intuitive and user-friendly.
             </p>
-        </div>
-
-        <div class="project-card">
-            <h3>E-Commerce Website</h3>
             <p>
-                Modern shopping experience with clean layouts.
+              With hands-on experience in HTML5, CSS3, and JavaScript ES6+, I love transforming design concepts into fully functional, accessible web applications. I believe in semantic HTML, efficient CSS, and purposeful JavaScript interactions.
             </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Banking Dashboard</h3>
             <p>
-                Financial dashboard focused on usability.
+              Currently, I'm expanding my expertise in UI/UX design, Python, and modern frontend frameworks. I'm always eager to learn and take on new challenges in web development.
             </p>
+            <a href="#contact" class="learn-more">
+              Let's work together <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i class="bi bi-code-slash"></i>
+              <h4>Clean Code</h4>
+              <p>Writing semantic, maintainable, and efficient code</p>
+            </div>
+            <div class="highlight-card">
+              <i class="bi bi-palette"></i>
+              <h4>Design Focus</h4>
+              <p>Creating beautiful and intuitive user interfaces</p>
+            </div>
+            <div class="highlight-card">
+              <i class="bi bi-phone"></i>
+              <h4>Responsive</h4>
+              <p>Perfect experience on all devices and screen sizes</p>
+            </div>
+            <div class="highlight-card">
+              <i class="bi bi-lightning"></i>
+              <h4>Performance</h4>
+              <p>Building fast-loading, optimized web applications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2>My <span class="gradient-text">Toolkit</span></h2>
         </div>
 
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="bi bi-code-square"></i> Languages</h3>
+            <div class="skill-items">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript ES6+</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="bi bi-layout-sidebar"></i> Frontend</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Flexbox</span>
+              <span class="skill-tag">CSS Grid</span>
+              <span class="skill-tag">DOM Manipulation</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="bi bi-tools"></i> Tools & Platforms</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Bootstrap Icons</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="bi bi-star"></i> Core Concepts</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Local Storage</span>
+              <span class="skill-tag">Semantic HTML</span>
+              <span class="skill-tag">UI/UX Basics</span>
+              <span class="skill-tag">Accessibility</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2>Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image dashboard-visual">
+              <div class="dashboard">
+                <div class="db-header"></div>
+                <div class="db-content">
+                  <div class="db-sidebar"></div>
+                  <div class="db-main">
+                    <div class="db-chart"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">01</span>
+              <h3>Customer Feedback Analytics Dashboard</h3>
+              <p>
+                A responsive and interactive dashboard for analyzing customer feedback with real-time analytics, advanced filtering, and data visualization powered by Local Storage.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="https://github.com/HARISH-hx" target="_blank" class="project-link">
+                View Project <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image cinema-visual">
+              <div class="cinema">
+                <div class="screen"></div>
+                <div class="seats-grid"></div>
+                <div class="booking-info"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">02</span>
+              <h3>Movie Ticket Booking System</h3>
+              <p>
+                A clean and intuitive movie booking platform with responsive seat selection, movie listings, and a smooth checkout flow optimized for all devices.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="https://github.com/HARISH-hx" target="_blank" class="project-link">
+                View Project <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2>My <span class="gradient-text">Journey</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">July 2024 - Present</span>
+              <h3>Web Development Intern</h3>
+              <p class="company">Virtual Tech Services, Avadi</p>
+              <ul>
+                <li>Developed responsive web pages using HTML, CSS, and JavaScript</li>
+                <li>Supported testing, debugging, and code optimization</li>
+                <li>Collaborated with team members on development tasks</li>
+                <li>Strengthened practical knowledge of responsive design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 - 2027</span>
+              <h3>B.E. Computer Science Engineering</h3>
+              <p class="company">Prathyusha Engineering College</p>
+              <ul>
+                <li>Specialization: Cyber Security</li>
+                <li>Current CGPA: 8.63</li>
+                <li>Courses: Web Development, Data Structures, DBMS, OOP</li>
+                <li>Active participant in coding and development initiatives</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h3>Higher Secondary Education</h3>
+              <p class="company">Ghana Vidyalaya Matric Hr. Sec. School</p>
+              <ul>
+                <li>Score: 82%</li>
+                <li>Strong foundation in Mathematics and Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2>Let's <span class="gradient-text">Connect</span></h2>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-content">
+            <p>
+              I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+            
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:harish.babu.0115@gmail.com">harish.babu.0115@gmail.com</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-telephone"></i>
+                <div>
+                  <span>Phone</span>
+                  <a href="tel:+916380807046">+91 63808 07046</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <span>Location</span>
+                  <p>Thiruvallur, Tamil Nadu, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="https://github.com/HARISH-hx" target="_blank" rel="noreferrer" class="social-btn">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/harish-babu-dev/" target="_blank" rel="noreferrer" class="social-btn">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+              <a href="resume.html" class="social-btn">
+                <i class="bi bi-file-earmark-pdf"></i> Resume
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send Message <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Harish B. All rights reserved.</p>
+        <p>Crafted with <i class="bi bi-heart-fill"></i> for the web</p>
+      </div>
+      <a href="#home" class="back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+      </a>
     </div>
+  </footer>
 
-</section>
-
-<!-- Contact -->
-
-<section id="contact">
-
-    <h2>Contact Me</h2>
-
-    <div class="contact-buttons">
-
-        <a href="mailto:youremail@gmail.com" class="contact-btn">
-            📧 Email
-        </a>
-
-        <a href="https://linkedin.com/in/yourprofile"
-           target="_blank"
-           class="contact-btn">
-            💼 LinkedIn
-        </a>
-
-        <a href="https://github.com/yourusername"
-           target="_blank"
-           class="contact-btn">
-            🐱 GitHub
-        </a>
-
-        <a href="https://instagram.com/yourusername"
-           target="_blank"
-           class="contact-btn">
-            📷 Instagram
-        </a>
-
-        <a href="https://behance.net/yourprofile"
-           target="_blank"
-           class="contact-btn">
-            🎨 Behance
-        </a>
-
-    </div>
-
-</section>
-
-<!-- Footer -->
-
-<footer>
-
-    <p>
-        © 2026 Harish | UI/UX Designer Portfolio
-    </p>
-
-</footer>
-
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
